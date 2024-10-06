@@ -8,11 +8,9 @@ const BirthdayList = () => {
   };
 
   return (
-    <div>
-      <h1> 🎂 Birthday List 🎂 </h1>
-
-      <div className="birthdayList">{birthday.length > 0}</div>
-    </div>
+    <>
+      <BirthdayList />
+    </>
   );
 };
 
