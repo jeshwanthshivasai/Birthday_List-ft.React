@@ -1,17 +1,13 @@
-import React, { useState } from 'react';
-import birthdays from '../db.js';
+import React from 'react';
+import BirthdayList from './components/BirthdayList';
+import './index.css';
 
-const BirthdayList = () => {
-  const [birthday, setBirthday] = useState(birthdays);
-  const clearBirthdays = () => {
-    setBirthday([]);
-  };
-
+function App() {
   return (
-    <>
+    <div className="App">
       <BirthdayList />
-    </>
+    </div>
   );
-};
+}
 
-export default BirthdayList;
+export default App;
