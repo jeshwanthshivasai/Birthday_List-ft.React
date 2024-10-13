@@ -1,34 +1,140 @@
-.App {
+/* .App {
   text-align: center;
   font-family: Arial, sans-serif;
 }
 
 .birthday-list {
   margin: 20px auto;
-  max-width: 600px;
+  max-width: 400px;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 15px;
 }
 
 .person {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #fff7f8;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: none;
+  width: 150px;
+  height: 200px;
+}
+
+.person:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .person img {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  margin-right: 20px;
+  margin-bottom: 10px;
+  border: 2px solid #9b9b9b;
 }
 
 .person h3 {
+  margin: 10px 0 5px 0;
+  font-size: 0.9em;
+  color: #898989;
+}
+
+.person p {
   margin: 0;
+  color: #666;
+  font-size: 0.8em;
 }
 
 .clear-btn {
   padding: 10px 20px;
-  background-color: red;
+  background-color: #5e5e5e;
   color: white;
   border: none;
+  border-radius: 20px;
   cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-top: 20px;
 }
+
+.clear-btn:hover {
+  background-color: #393939;
+  transform: scale(1.05);
+} */
+
+
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.birthday-list-container {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 600px; /* Adjust based on your layout */
+}
+
+.birthday-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Fixed to 2 columns */
+  grid-template-rows: repeat(2, auto); /* 2 rows to create the 2x2 grid */
+  gap: 20px; /* Space between the cards */
+}
+
+.person {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  background-color: #fff7f8;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: none;
+}
+
+.person:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.person img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 2px solid #9b9b9b;
+}
+
+.person h3 {
+  margin: 10px 0 5px 0;
+  font-size: 1em;
+  color: #898989;
+}
+
+.person p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9em;
+}
+
+.clear-btn {
+  padding: 10px 20px;
+  background-color: #5e5e5e;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-top: 20px;
+}
+
+.clear-btn:hover {
+  background-color: #393939;
+  transform: scale(1.05);
+}
+
